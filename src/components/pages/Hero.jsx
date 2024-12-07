@@ -3,11 +3,14 @@ import React, { useState } from 'react';
 import { HoverBorderGradient } from '../ui/HoverBorderGradient'
 function Hero() {
     const [BtnText, setBtnText] = useState("Copy Email");
-
+    const [resumeBtn,setResumeBtn] =useState("Resume")
     const handleCopyEmail = () => {
       navigator.clipboard.writeText("shyam93721@gmail.com");
       setBtnText("Copied!");
       setTimeout(() => setBtnText("Copy Email"), 15000);
+    };
+    const handleResume = () => {
+          window.location.href="https://drive.google.com/file/d/1kTtlSDDzWnRZJgJwnrUlzlhBIoVZ4iN6/view?usp=drive_link";
     };
   return (
     <div
@@ -40,6 +43,18 @@ function Hero() {
                 clockwise={true}
               >
                 {BtnText}
+              </HoverBorderGradient>
+            </div>
+            
+            <div className="text-white">
+              <HoverBorderGradient
+                onClick={handleResume}
+                containerClassName="my-custom-container-class"
+                className="my-custom-content-class"
+                duration={0.5}
+                clockwise={true}
+              >
+                {resumeBtn}
               </HoverBorderGradient>
             </div>
           </div>

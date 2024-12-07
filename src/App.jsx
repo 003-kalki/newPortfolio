@@ -6,7 +6,7 @@ import Hero from './components/pages/Hero';
 import About from './components/pages/About';
 import Skills from './components/pages/Skills';
 import Projects from './components/pages/Projects';
-
+import Contact from './components/pages/Contact';
 export default function App() {
   return (
     <BrowserRouter>
@@ -15,9 +15,9 @@ export default function App() {
        <Skills/>
        <About />  
        <Projects/>
+       <Contact/>
        <Routes> 
-      </Routes>
-      
+      </Routes>    
     </BrowserRouter>
   );
 }
