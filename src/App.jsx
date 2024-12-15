@@ -17,6 +17,7 @@ export default function App() {
        <Projects/>
        <Contact/>
        <Routes> 
+        
       </Routes>    
     </BrowserRouter>
   );
