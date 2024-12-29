@@ -10,7 +10,7 @@ function Hero() {
       setTimeout(() => setBtnText("Copy Email"), 15000);
     };
     const handleResume = () => {
-          window.location.href="https://drive.google.com/file/d/1kTtlSDDzWnRZJgJwnrUlzlhBIoVZ4iN6/view?usp=drive_link";
+          window.location.href="https://drive.google.com/file/d/1TS2Jas1q1f8a9zm6y-cEBGWS2NqolSw8/view?usp=drive_link";
     };
   return (
     <div
