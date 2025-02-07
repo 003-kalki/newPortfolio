@@ -13,7 +13,7 @@ function Hero() {
           window.location.href="https://drive.google.com/file/d/1TS2Jas1q1f8a9zm6y-cEBGWS2NqolSw8/view?usp=drive_link";
     };
   return (
-    <div
+    <section id="hero"
       className="min-h-screen w-full bg-black bg-dot-pattern bg-dots-spacing flex flex-col items-center justify-center text-center px-4 "
     >
       {/* Hero section */}
@@ -61,7 +61,7 @@ function Hero() {
           
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

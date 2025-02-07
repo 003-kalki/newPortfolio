@@ -8,7 +8,7 @@ import CardHover from '../ui/CardHover';
 
 function Skills() {
   return (
-    <div className='bg-customGrey sm:h-screen flex flex-col items-center justify-center'>
+    <section id="skills" className='bg-customGrey sm:h-screen flex flex-col items-center justify-center'>
       <p className="text-4xl sm:text-5xl font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500 mb-8">
         Skill Set
       </p>
@@ -49,7 +49,7 @@ function Skills() {
           subTits2="Github" 
         />
       </div>
-    </div>
+    </section>
   );
 }
 

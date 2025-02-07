@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { close, logo, menu } from "../assets";
-import { navLinks } from "./constants"
+import { close, menu } from "../assets";
+import { navLinks } from "./constants";
 
 const Navbar = () => {
   const [active, setActive] = useState("Home");
@@ -8,8 +8,10 @@ const Navbar = () => {
 
   return (
     <nav className="w-full bg-black flex py-6 justify-between items-center px-6 sticky top-0 z-50">
-      {/* Add padding to the left */}
-      <p className="text-white font-semibold font-poppins pl-4">Shyam Sharma</p>
+      {/* Clickable "Shyam Sharma" that navigates to Hero section */}
+      <a href="#hero" className="text-white font-semibold font-poppins pl-4 cursor-pointer">
+        Shyam Sharma
+      </a>
 
       {/* Navigation Links */}
       <ul className="list-none sm:flex hidden justify-end items-center flex-1 pr-4">
